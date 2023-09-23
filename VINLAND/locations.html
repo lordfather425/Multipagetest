@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Locations - VINLANDTECH</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: #4A90E2;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            font-size: 36px;
+            font-weight: bold;
+            font-family: 'Lucida Handwriting', cursive;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        .content {
+            margin: 20px auto;
+            max-width: 1200px; 
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .location-pane {
+            background-color: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            padding: 20px;
+            margin: 10px;
+            box-sizing: border-box;
+            border-radius: 10px;
+            flex: 1; 
+            max-width: calc(33.33% - 20px);
+        }
+
+        .animate-button {
+            background-color: #4A90E2;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .animate-button:hover {
+            background-color: #357ABD;
+        }
+
+        .location-pane h2 {
+            font-size: 24px;
+            margin: 0;
+        }
+
+        .location-pane p {
+            font-size: 16px;
+        }
+
+        .location-image {
+            max-width: 100%;
+            margin-top: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .location-pane {
+                flex: none; 
+                max-width: 100%; 
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <span style="font-size: 24px;">Your Trusted</span><br>
+        VINLANDTECH
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="careers.html">Careers</a></li>
+                <li><a href="locations.html">Locations</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="content">
+            <h1>Locations</h1>
+
+            <div class="location-pane">
+                <img src="nord.jpg" alt="Classic Nord" class="location-image">
+                <h2>Location 1: Classic Nord</h2>
+                <p>Classic Nord is a picturesque town nestled in the mountains of Skyrim. Known for its stunning landscapes, warm hospitality, and Nordic traditions, Classic Nord is the perfect place to experience the heart of Skyrim.</p>
+            </div>
+
+            <div class="location-pane">
+                <img src="whiterun.jpg" alt="Whiterun" class="location-image">
+                <h2>Location 2: Whiterun</h2>
+                <p>Whiterun is a bustling city located in the central plains of Skyrim. It is known for its trade, commerce, and the famous Dragonsreach, where the Jarl of Whiterun resides. Explore the markets and meet the friendly locals in Whiterun.</p>
+            </div>
+
+            <div class="location-pane">
+                <img src="solitude.webp" alt="Solitude" class="location-image">
+                <h2>Location 3: Solitude</h2>
+                <p>Solitude, the capital of Skyrim, is a coastal city with a rich history and culture. It is known for its majestic architecture, cultural festivals, and proximity to the sea. Experience the grandeur of Solitude.</p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
